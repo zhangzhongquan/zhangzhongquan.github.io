@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>zhangzhongquan</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-03-06T11:13:56.319Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>张忠全</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>bootstrap学习笔记(一)</title>
+    <link href="http://yoursite.com/2017/03/06/bootstrap%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/"/>
+    <id>http://yoursite.com/2017/03/06/bootstrap学习笔记(一)/</id>
+    <published>2017-03-05T16:00:00.000Z</published>
+    <updated>2017-03-06T11:13:56.319Z</updated>
+    
+    <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170306/184850026.png" alt="mark"><br>初识删格系统原理和媒体查询<br><br><a id="more"></a></excerpt></p>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+<p>###1.删格系统原理<br>栅格系统用于通过一系列的行（row）与列（column）的组合来创建页面布局，你的内容就可以放入这些创建好的布局中。下面就介绍一下 Bootstrap 栅格系统的工作原理：</p>
+<ul>
+<li><p>行（row）”必须包含在 .container （固定宽度）或 .container-fluid （100% 宽度）中，以便为其赋予合适的排列（aligment）和内补（padding）。</p>
+</li>
+<li><p>通过“行（row）”在水平方向创建一组“列（column）”。</p>
+</li>
+</ul>
+<hr>
+<p>###2.媒体查询<br>在栅格系统中，我们在 Less 文件中使用以下媒体查询（media query）来创建关键的分界点阈值。</p>
+<pre><code>/* 超小屏幕（手机，小于 768px） */
+/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: @screen-sm-min) { ... }
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: @screen-md-min) { ... }
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: @screen-lg-min) { ... }
+</code></pre><p><strong>Dome code</strong></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+    &lt;style&gt;
+        div{
+            border:1px
+            #333333 solid;
+        }
+
+        @media (max-width: 767px) {
+            div{
+                background: #ffd11e;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1199px ) {
+            div{
+                background: #2afdff;
+            }
+        }
+        @media (min-width: 1200px) {
+            div{
+                background: #ff1213;
+            }
+        }
+
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-1&quot;&gt;1&lt;/div&gt;
+            &lt;div class=&quot;col-md-1&quot;&gt;2&lt;/div&gt;
+            &lt;div class=&quot;col-md-1&quot;&gt;3&lt;/div&gt;
+            &lt;div class=&quot;col-md-1&quot;&gt;4&lt;/div&gt;
+            &lt;div class=&quot;col-md-1&quot;&gt;5&lt;/div&gt;
+            &lt;div class=&quot;col-md-1&quot;&gt;6&lt;/div&gt;
+            &lt;div class=&quot;col-md-1&quot;&gt;7&lt;/div&gt;
+            &lt;div class=&quot;col-md-1&quot;&gt;8&lt;/div&gt;
+            &lt;div class=&quot;col-md-1&quot;&gt;9&lt;/div&gt;
+            &lt;div class=&quot;col-md-1&quot;&gt;10&lt;/div&gt;
+            &lt;div class=&quot;col-md-1&quot;&gt;11&lt;/div&gt;
+            &lt;div class=&quot;col-md-1&quot;&gt;12&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-8 col-sm-6&quot;&gt;8 or 6&lt;/div&gt;
+            &lt;div class=&quot;col-md-4 col-sm-6&quot;&gt;4 or 6&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></the>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;&lt;img src=&quot;http://ok8z4bh5q.bkt.clouddn.com/blog/20170306/184850026.png&quot; alt=&quot;mark&quot;&gt;&lt;br&gt;初识删格系统原理和媒体查询&lt;br&gt;&lt;/center&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>前端的学习笔记01||jQuery的优势</title>
+    <link href="http://yoursite.com/2017/01/26/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0jquery01/"/>
+    <id>http://yoursite.com/2017/01/26/前端学习笔记jquery01/</id>
+    <published>2017-01-25T18:15:21.000Z</published>
+    <updated>2017-02-05T18:17:39.086Z</updated>
+    
+    <content type="html"><![CDATA[<excerpt in="" index="" |="" 首页摘要=""> 
+
+<p><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170206/020937995.png" alt="mark"></p>
+<a id="more"></a>
+<p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
+<h3 id="jQuery的优势-写的少，做的多"><a href="#jQuery的优势-写的少，做的多" class="headerlink" title="jQuery的优势-写的少，做的多"></a>jQuery的优势-写的少，做的多</h3><pre><code>非常轻巧
+
+强大的选择器。允许开发者使用所有CSS的选择器
+
+出色的DOM操作封装。使便于DOM的操作。
+
+可靠的事件处理机制
+
+完善的Ajax.
+
+兼容性非常强
+
+链式操作
+
+隐式迭代
+
+行为层和结构层分离
+
+丰富的ui插件
+</code></pre><p>学习资源：<br>书籍：锋利的jQuery第二版<br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170205/222903395.png" alt="mark"></p>
+<p>网络视频：慕课网的视频<br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170205/223602626.png" alt="mark"></p>
+</excerpt>]]></content>
+    
+    <summary type="html">
+    
+      &lt;Excerpt in index | 首页摘要&gt; 
+
+&lt;p&gt;&lt;img src=&quot;http://ok8z4bh5q.bkt.clouddn.com/blog/20170206/020937995.png&quot; alt=&quot;mark&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在十字路口，我捡到一本书：《解忧杂货店》</title>
+    <link href="http://yoursite.com/2017/01/25/%E8%A7%A3%E5%BF%A7%E6%9D%82%E8%B4%A7%E5%BA%97/"/>
+    <id>http://yoursite.com/2017/01/25/解忧杂货店/</id>
+    <published>2017-01-24T16:00:00.000Z</published>
+    <updated>2017-02-05T15:41:26.610Z</updated>
+    
+    <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""> </excerpt></p>
+<h3 id="选择塑造人生"><a href="#选择塑造人生" class="headerlink" title="选择塑造人生"></a>选择塑造人生</h3><p>我们的每一次艰难选择，犹如在人生十字路口，期盼在迷茫徘徊时有这样的一个杂货店，能指引前进的方向。也许那件杂货店一直都在，指引我们的永远不是别人，而是自己的内心。</p>
+<p>这本书中讲诉了一家杂货店，只要写下烦恼投进店前门卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。书中谢几段故事，也是几种人生的不同抉择。</p>
+<a id="more"></a>
+<p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
+<center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170125/024927265.jpg" alt="mark"><br></center>
+
+
+
+<h3 id="1-爱情-PK-奥运梦"><a href="#1-爱情-PK-奥运梦" class="headerlink" title="1.爱情 PK 奥运梦"></a>1.爱情 PK 奥运梦</h3><p>“<strong>月兔</strong>”是一名即将参加1980年莫斯科奥运会的候选运动员，她有一个从事体育事业的男友，她们深爱彼此，奥运会是她们的共同理想。但对方却身患癌症，余日无多。纠结于参加强化集训实现梦想，还是为了爱情和即将逝去的生命陪在男友身边。在这种情况下她求助了解决烦恼的浪矢杂货店。</p>
+<p>她不知道的是杂货店里不在是浪矢杂货店的主人浪矢雄治，而是三个来自21世纪的小偷。小偷三人组因为知道因为1979年苏联入侵阿富汗，日本抵制了第二年的莫斯科奥运会，所以通过穿越时空的信件告诉“月兔”应该珍惜和陪伴男友最后的生命，而不是去参加无所谓的奥运会。</p>
+<center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170125/053449491.png" alt="mark"><br></center>
+
+<blockquote>
+<p><em>这是关于爱情和生命与理想之间选择的故事。我们通过三个小偷从上帝视角知道怎样选择是正确的，但是当我们跌落凡尘此刻的自己，我们将怎样选择？</em></p>
+</blockquote>
+<h3 id="2-理想-OR现实"><a href="#2-理想-OR现实" class="headerlink" title="2.理想 OR现实"></a>2.理想 OR现实</h3><p>松冈克郎是在东京某大学学习经济的大学生，但他的理想确是做一名创作型职业歌手，为此他违背父母的意愿中途退学，去搞原创。原创歌手不好搞，他也没有音乐才华在东京混了三年日子。因为奶奶病逝回家参加丧礼。回家后发现父亲体弱，确依然辛苦的坚持经营祖传的鱼店。作为独子他想要负起责任，面对音乐理想和家族事业，不知如何选择。</p>
+<p>投信咨询，成为杂货店里小偷三人组收到的第二个咨询者。在小偷三人的建议下准备继承鱼店，但没想到看似固执的父亲却鼓励他坚持理想，去东京继续拼搏，哪怕最后失败，也要去努力，至少留下自己的足迹。1988年12月24日夜给丸光园做圣诞节的慰问演出时遇上火灾，拼死救出福利院男童水原辰，全身严重烧伤，于医院中过世。</p>
+<center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170125/055902577.jpg" alt="mark"><br></center>
+
+<blockquote>
+<p><em>这是关于理想和现实之间的选择，克朗是幸运的，羡慕他有个包容的父亲，他的父亲明亮如灯。现实是充满安逸的诱惑，屈服现实只需要你静静的坐着，或者安稳的接受，在称之为理想的路上则是充满艰难，困惑、迷茫，失败。选择安逸还是不可知的未来？理想还是现实？克朗的父亲告诉了我们不错的选择：至少留下自己的足迹。克朗启迪了水原辰的姐姐水原芹，她将克朗的代表作《重生》唱红。生命在歌声中浴火重生……</em></p>
+</blockquote>
+<h3 id="3-我选绝望，给你希望"><a href="#3-我选绝望，给你希望" class="headerlink" title="3.我选绝望，给你希望"></a>3.我选绝望，给你希望</h3><p>   中学生浩介家境殷实，还是披头士的歌迷。然而某天，他得知父亲的公司陷入了经营困境，为了躲债家人准备夜晚逃跑。他对父亲从崇拜到极度失望。在面临和父母一起逃亡和自己离家出走选择之间迷茫徘徊。</p>
+<p>   投信咨询，浪矢杂货店的主人浪矢雄治建议不建议他独自离家出走。但是在举家逃亡的路上，他还是独自离开了父母，逃亡后隐姓埋名并被丸光园收留。长大后他的生活平稳安乐。并认为自己的选择是正确的。直到有一天发现逃亡路上他独自离开后，父母自杀，并且伪造了他也被“自杀”的证据。而初衷正是不想因为破产潜逃而连累自己的儿子。</p>
+<center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170125/032534427.jpg" alt="mark"><br></center>
+
+<blockquote>
+<p><em>我曾问过我的朋友为了孩子可以付出到什么底线，他告诉我没有底线。就如书中故事，父母选择绝望，赋予他人生的希望。</em></p>
+</blockquote>
+<h3 id="4-迷路的“小狗”"><a href="#4-迷路的“小狗”" class="headerlink" title="4.迷路的“小狗”"></a>4.迷路的“小狗”</h3><p>武藤晴美家境贫寒，为了照顾生病的母亲，想辞掉低薪正常的工作当全职酒家女，好积累原始资金，然后自立开店。她像迷路的小狗，向浪矢杂货店致信咨询该如何选择。</p>
+<p>她是偷三人组收到的第三位咨询者。小偷三人组得知了她想要挣钱报恩的真实想法后，对她描绘了日后日本的经济走向，提出了致富的建议，使晴美一步步成为大公司社长。</p>
+<p>说道这里不得不感叹，人生是个循环。武藤晴美因被误会要对丸光园不利，三个在丸光园长大的少年郭也、翔太、辛平，在特殊的日子9月12号进入她家行窃，由于被撞见将其绑架后逃离，这三人就是我们一直说的小偷三人组。他们逃离到浪矢杂货店通过时空信件的指引，迷路的小狗才变成现在成功的武藤晴美。*</p>
+<center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170125/034648169.png" alt="mark"><br></center>
+
+<blockquote>
+<p><em>时光画了一个圆，人生是个循环。</em></p>
+</blockquote>
+<p>小说的几段故事，看似独立，但是可以发现其实每个人物都牵动着彼此，都和浪矢杂货店有渊源，都隐隐地和孤儿院丸光园有着千丝万缕的联系，都影响着彼此的人生。</p>
+<center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170125/044510381.bmp" alt="mark"><br></center>   
+
+<h3 id="在人生十字路口，我们期盼在迷茫徘徊时也有这样的一个杂货店，能指引我们前进的方向。其实那件杂货店一直都在，指引我们的永远不是别人，而是自己的内心。"><a href="#在人生十字路口，我们期盼在迷茫徘徊时也有这样的一个杂货店，能指引我们前进的方向。其实那件杂货店一直都在，指引我们的永远不是别人，而是自己的内心。" class="headerlink" title="在人生十字路口，我们期盼在迷茫徘徊时也有这样的一个杂货店，能指引我们前进的方向。其实那件杂货店一直都在，指引我们的永远不是别人，而是自己的内心。"></a>在人生十字路口，我们期盼在迷茫徘徊时也有这样的一个杂货店，能指引我们前进的方向。其实那件杂货店一直都在，指引我们的永远不是别人，而是自己的内心。</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;Excerpt in index | 首页摘要&gt; &lt;/p&gt;
+&lt;h3 id=&quot;选择塑造人生&quot;&gt;&lt;a href=&quot;#选择塑造人生&quot; class=&quot;headerlink&quot; title=&quot;选择塑造人生&quot;&gt;&lt;/a&gt;选择塑造人生&lt;/h3&gt;&lt;p&gt;我们的每一次艰难选择，犹如在人生十字路口，期盼在迷茫徘徊时有这样的一个杂货店，能指引前进的方向。也许那件杂货店一直都在，指引我们的永远不是别人，而是自己的内心。&lt;/p&gt;
+&lt;p&gt;这本书中讲诉了一家杂货店，只要写下烦恼投进店前门卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。书中谢几段故事，也是几种人生的不同抉择。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

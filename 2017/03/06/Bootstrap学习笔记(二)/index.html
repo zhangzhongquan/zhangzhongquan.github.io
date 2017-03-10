@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Bootstrap学习笔记(二) | zhangzhongquan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="##bootstrap栅格统的使用方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bootstrap学习笔记(二)">
+<meta property="og:url" content="zhangzhongquan.com/2017/03/06/Bootstrap学习笔记(二)/index.html">
+<meta property="og:site_name" content="zhangzhongquan">
+<meta property="og:description" content="##bootstrap栅格统的使用方法">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170306/184850026.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/033324937.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/033423135.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/051142321.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/051542198.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/052543841.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/052850325.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055145942.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055452806.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055452806.png">
+<meta property="og:updated_time" content="2017-03-09T13:16:51.311Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Bootstrap学习笔记(二)">
+<meta name="twitter:description" content="##bootstrap栅格统的使用方法">
+<meta name="twitter:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170306/184850026.png">
+  
+    <link rel="alternate" href="/atom.xml" title="zhangzhongquan" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">zhangzhongquan</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="zhangzhongquan.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Bootstrap学习笔记(二)" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/06/Bootstrap学习笔记(二)/" class="article-date">
+  <time datetime="2017-03-05T16:00:00.000Z" itemprop="datePublished">2017-03-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Bootstrap学习笔记(二)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><excerpt in="" index="" |="" 首页摘要=""><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170306/184850026.png" alt="mark">    </excerpt></p>
+<p>##bootstrap栅格统的使用方法<br><br><a id="more"></a></p>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+<ul>
+<li><p>###布局容器和列组合</p>
+<p>  bootstrap 需要为页面内容和栅格系统包裹一个.container容器。我们提供了两个作此用处的类。注意，由于 padding 等属性的原因，这两种 容器类不能互相嵌套。</p>
+<ol>
+<li>.container 类用于固定宽度并支持响应式布局的容器。</li>
+<li>.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。</li>
+</ol>
+</li>
+</ul>
+<hr>
+<p>###例1：移动设备和桌面屏幕</p>
+<center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/033324937.png" alt="mark"><br></center><br><center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/033423135.png" alt="mark"><br></center>
+
+<p> 代码:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;Dome02&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+    &lt;style&gt;
+        div{
+            border:1px solid #333333;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-12 col-md-8&quot;&gt;.col-xs-12 .col-md-8&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-6 &quot;&gt;.col-xs-6 &lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 &quot;&gt;.col-xs-6 &lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 &quot;&gt;.col-xs-6 &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><hr>
+<pre><code>###   例2.手机平板桌面
+&lt;center&gt;![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/041203537.png)&lt;/center&gt;
+&lt;center&gt;***平板显示***&lt;/center&gt;
+&lt;center&gt;![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/041347333.png)&lt;/center&gt;
+&lt;center&gt;***平板桌面显示***&lt;/center&gt;
+代码：
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;Dome03&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+    &lt;style&gt;
+        div{
+            border:1px solid #333333;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-12 col-sm-6 col-md-8&quot;&gt;.col-xs-12.col-sm-6.col-md-8&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6.col-sm-4&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6.col-sm-4&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6.col-sm-4&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><hr>
+<ul>
+<li><p>###列偏移：</p>
+<p> 使用 .col-md-offset-<em> 类可以将列向右侧偏移。这些类实际是通过使用 </em> 选择器为当前元素增加了左侧的边距（margin）。例如，.col-md-offset-4 类将 .col-md-4 元素向右侧偏移了4个列（column）的宽度。</p>
+</li>
+</ul>
+<pre><code>例：列偏移
+
+&lt;center&gt;![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/045132193.png)&lt;/center&gt;
+&lt;center&gt;***偏移前***&lt;/center&gt;
+
+&lt;center&gt;![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/045856303.png)&lt;/center&gt;
+&lt;center&gt;***偏移*后**&lt;/center&gt;
+代码：
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;Dome02&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+    &lt;style&gt;
+        div{
+            border: 1px solid #000000;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;&lt;!--列偏移开始--&gt;
+        &lt;div class=&quot;col-md-3 col-md-offset-2&quot;&gt;col-md-3&lt;/div&gt;
+        &lt;div class=&quot;col-md-2 col-md-offset-3&quot;&gt;col-md-2&lt;/div&gt;
+    &lt;/div&gt;&lt;!--列偏移结束--&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><hr>
+<ul>
+<li><p>###列嵌套：<br> 为了使用内置的栅格系统将内容再次嵌套，可以通过添加一个新的 .row 元素和一系列 .col-sm-<em> 元素到已经存在的 .col-sm-</em> 元素内。被嵌套的行（row）所包含的列（column）的个数不能超过12（其实，没有要求你必须占满12列）。</p>
+<p> 例：列嵌套</p>
+ <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/051142321.png" alt="mark"></center><br> <center><strong><em>嵌套前</em></strong></center>        
+
+ <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/051542198.png" alt="mark"></center><br> <center><strong><em>嵌套后</em></strong></center>
+
+<p> 代码：</p>
+</li>
+</ul>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Dome05&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+&lt;style&gt;
+    div{
+        border: 1px solid #000000;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+    &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;!--列偏移--&gt;
+    &lt;div class=&quot;col-md-3 col-md-offset-2&quot;&gt;col-md-3&lt;/div&gt;
+    &lt;div class=&quot;col-md-2 col-md-offset-3&quot;&gt;col-md-2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;!--列嵌套开始--&gt;
+    &lt;div class=&quot;col-xs-8&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-xs-6&quot;&gt;6&lt;/div&gt;
+            &lt;div class=&quot;col-xs-6&quot;&gt;6&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs-4&quot;&gt;4&lt;/div&gt;
+&lt;/div&gt;&lt;!--列嵌套结束--&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><hr>
+<ul>
+<li><p>###列排序</p>
+<p>  通过使用 .col-md-push-<em> （向右推）和 .col-md-pull-</em>（向左拉） 类就可以很容易的改变列（column）的顺序。</p>
+<p>  例:列排序</p>
+  <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/052543841.png" alt="mark"></center><br>  <center><strong><em>排序前</em></strong></center>
+
+<p>  <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/052850325.png" alt="mark"></center><br>  <center><strong><em>排序后</em></strong></center><br>  代码：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Dome06&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+&lt;style&gt;
+    div{
+        border: 1px solid #000000;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+    &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;!--列偏移--&gt;
+    &lt;div class=&quot;col-md-3 col-md-offset-2&quot;&gt;col-md-3&lt;/div&gt;
+    &lt;div class=&quot;col-md-2 col-md-offset-3&quot;&gt;col-md-2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;!--列嵌套开始--&gt;
+    &lt;div class=&quot;col-xs-8&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-xs-6&quot;&gt;6&lt;/div&gt;
+            &lt;div class=&quot;col-xs-6&quot;&gt;6&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs-4&quot;&gt;4&lt;/div&gt;
+&lt;/div&gt;&lt;!--列嵌套结束--&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;!--列排序开始--&gt;
+    &lt;div class=&quot;col-md-3 col-md-push-7&quot;&gt;col-md-3&lt;/div&gt;
+    &lt;div class=&quot;col-md-2 col-md-pull-2&quot;&gt;col-md-2&lt;/div&gt;
+&lt;/div&gt;&lt;!--列排序结束--&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+<li><p>###清除浮动<br>  在某些阈值时，某些列可能会出现比别的列高的情况。为了克服这一问题，建议联合使用 .clearfix</p>
+<p>  例：清除浮动</p>
+  <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055145942.png" alt="mark"></center><br>  <center><strong><em>清除前超阈值宽屏</em></strong></center>
+
+  <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055452806.png" alt="mark"></center><br>  <center><strong><em>清除浮动前超阈值窄屏</em></strong></center>
+
+<p>  <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055452806.png" alt="mark"></center><br>  <center><strong><em>清除浮动前超阈值窄屏</em></strong></center><br>  <center></center></p>
+<pre><code>![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/060139562.png)&lt;/center&gt;
+</code></pre><p>  <center><strong><em>清除浮动后超阈值窄屏</em></strong></center><br>  代码：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;Dome07&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+    &lt;style&gt;
+        div{
+            border: 1px solid #333333;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;col-xs-6 col-sm-3  1&lt;br/&gt;afdkfaskdfsldfjlaskdfsfa&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;col-xs-6 col-sm-3  2&lt;/div&gt;
+        &lt;div class=&quot;clearfix visible-xs&quot;&gt;&lt;/div&gt; &lt;!--清除上一行的浮动--&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;col-xs-6 col-sm-3  3&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;col-xs-6 col-sm-3  4&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+</ul>
+</the>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="zhangzhongquan.com/2017/03/06/Bootstrap学习笔记(二)/" data-id="cj04arrq00000lw7pqoj16qk9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/03/11/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/06/bootstrap学习笔记(一)/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">bootstrap学习笔记(一)</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/11/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/06/Bootstrap学习笔记(二)/">Bootstrap学习笔记(二)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/06/bootstrap学习笔记(一)/">bootstrap学习笔记(一)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/26/前端学习笔记jquery01/">前端的学习笔记01||jQuery的优势</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/25/解忧杂货店/">在十字路口，我捡到一本书：《解忧杂货店》</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 张忠全<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
