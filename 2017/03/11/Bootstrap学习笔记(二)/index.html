@@ -31,7 +31,8 @@
 <meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055145942.png">
 <meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055452806.png">
 <meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055452806.png">
-<meta property="og:updated_time" content="2017-03-10T21:04:00.684Z">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/053443178.jpg">
+<meta property="og:updated_time" content="2017-03-10T21:36:50.991Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bootstrap学习笔记(二)">
 <meta name="twitter:description" content="##bootstrap栅格统的使用方法">
@@ -418,40 +419,41 @@
 &lt;center&gt;***偏移*后**&lt;/center&gt;
 代码：
 
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Dome02&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
-    &lt;style&gt;
-        div{
-            border: 1px solid #000000;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
-        &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
-        &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        &lt;title&gt;Dome02&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+        &lt;style&gt;
+            div{
+                border: 1px solid #000000;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+            &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;&lt;!--列偏移开始--&gt;
+            &lt;div class=&quot;col-md-3 col-md-offset-2&quot;&gt;col-md-3&lt;/div&gt;
+            &lt;div class=&quot;col-md-2 col-md-offset-3&quot;&gt;col-md-2&lt;/div&gt;
+        &lt;/div&gt;&lt;!--列偏移结束--&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
-        &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;&lt;!--列偏移开始--&gt;
-        &lt;div class=&quot;col-md-3 col-md-offset-2&quot;&gt;col-md-3&lt;/div&gt;
-        &lt;div class=&quot;col-md-2 col-md-offset-3&quot;&gt;col-md-2&lt;/div&gt;
-    &lt;/div&gt;&lt;!--列偏移结束--&gt;
-&lt;/div&gt;
-&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+    &lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
 </code></pre><hr>
 <ul>
 <li><p>###列嵌套：<br> 为了使用内置的栅格系统将内容再次嵌套，可以通过添加一个新的 .row 元素和一系列 .col-sm-<em> 元素到已经存在的 .col-sm-</em> 元素内。被嵌套的行（row）所包含的列（column）的个数不能超过12（其实，没有要求你必须占满12列）。</p>
@@ -601,7 +603,8 @@
 &lt;/html&gt;
 </code></pre></li>
 </ul>
-</the>
+<p>请关注我：</p>
+<center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/053443178.jpg" alt="mark"></center></the>
       
     </div>
     
@@ -612,7 +615,7 @@
         <p><span>本文标题:</span><a href="/2017/03/11/Bootstrap学习笔记(二)/">Bootstrap学习笔记(二)</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">张忠全</a></p>
         <p><span>发布时间:</span>2017-03-11, 00:00:00</p>
-        <p><span>最后更新:</span>2017-03-11, 05:04:00</p>
+        <p><span>最后更新:</span>2017-03-11, 05:36:50</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/03/11/Bootstrap学习笔记(二)/" title="Bootstrap学习笔记(二)">zhangzhongquan.com/2017/03/11/Bootstrap学习笔记(二)/</a>
             <span class="copy-path" data-clipboard-text="原文: zhangzhongquan.com/2017/03/11/Bootstrap学习笔记(二)/　　作者: 张忠全" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
