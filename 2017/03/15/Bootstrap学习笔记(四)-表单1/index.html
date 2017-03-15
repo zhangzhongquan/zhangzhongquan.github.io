@@ -15,12 +15,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="zhangzhongquan">
-<meta property="og:url" content="zhangzhongquan.com/archives/index.html">
+<meta name="description" content="##bootstrap表单">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bootstrap学习笔记(四)-表单1">
+<meta property="og:url" content="zhangzhongquan.com/2017/03/15/Bootstrap学习笔记(四)-表单1/index.html">
 <meta property="og:site_name" content="zhangzhongquan">
+<meta property="og:description" content="##bootstrap表单">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170315/103632280.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170315/103837188.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/100017619.png">
+<meta property="og:updated_time" content="2017-03-15T19:57:43.004Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zhangzhongquan">
+<meta name="twitter:title" content="Bootstrap学习笔记(四)-表单1">
+<meta name="twitter:description" content="##bootstrap表单">
+<meta name="twitter:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -52,7 +61,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives | zhangzhongquan</title>
+<title>Bootstrap学习笔记(四)-表单1 | zhangzhongquan</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -62,8 +71,8 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
-        isArchive: true,
+        isPost: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -260,226 +269,215 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-Bootstrap学习笔记(四)-表单1" class="article article-type-post" itemscope itemprop="blogPost">
   
+    <div class="article-meta">
+      <a href="/2017/03/15/Bootstrap学习笔记(四)-表单1/" class="article-date">
+      <time datetime="2017-03-14T16:00:00.000Z" itemprop="datePublished">2017-03-15</time>
+</a>
+
+
+    </div>
   
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Bootstrap学习笔记(四)-表单1
+    </h1>
+  
+
+      </header>
       
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/03/16/Bootstrap学习笔记(五)-表单2/" class="archive-article-date">
-      <time datetime="2017-03-15T16:00:00.000Z" itemprop="datePublished">03-16</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/16/Bootstrap学习笔记(五)-表单2/">Bootstrap学习笔记(五)-表单2.md</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
+    <div class="article-entry" itemprop="articleBody">
+      
           
+        <p><excerpt in="" index="" |="" 首页摘要=""> </excerpt></p>
+<p><center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark"><br></center></p>
+<p>##bootstrap表单<br><a id="more"></a></p>
+<p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
+<ul>
+<li>##知识点一<br>   1.将表单控件和元素放在.form-group  类的div中可获得好的排版，.form-control  实现自适应宽度布局<br>2..form-inline 类可使其内容左对齐并且表现为 inline-block 级别的控件。只适用于视口（viewport）至少在 768px             宽度时（视口宽度再小的话就会使表单折叠）。<br>   3.表单控件属性placeholder=“请用户输入”占位符可实现输入框没有聚焦时显示默认的参数，聚焦时消失。<br>   4..sr-only可以实现隐藏lable标签内容<br><center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170315/103632280.png" alt="mark"></center><br><center><strong><em>图片大于768px</em></strong></center><br><center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170315/103837188.png" alt="mark"></center><br><center><strong><em>图片小于768px</em></strong></center><br>代码:</li>
+</ul>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;Dome02&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+    &lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;form-inline&quot;&gt;
+        &lt;fieldset&gt;
+            &lt;legend&gt;用户登录&lt;/legend&gt;
 
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;lable&gt;用户名：&lt;/lable&gt;
+                &lt;input type=&quot;text&quot; name=&quot;name&quot; placeholder=&quot;输入用户名&quot; class=&quot;form-control&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;lable&gt;密码：&lt;/lable&gt;
+                    &lt;input type=&quot;password&quot; name=&quot;pwd&quot; class=&quot;form-control&quot; placeholder=&quot;请输入密码&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label class=&quot;sr-only&quot;&gt;邮箱地址：&lt;/label&gt;
+                &lt;input type=&quot;email&quot; class=&quot;form-control&quot;  placeholder=&quot;Email&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;lable&gt;&lt;input type=&quot;checkbox&quot;/&gt;记住密码&lt;/lable&gt;
+            &lt;/div&gt;
+         &lt;button  type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;登录&lt;/button&gt;
+        &lt;/fieldset&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><hr>
+<p>请关注我：</p>
+<p><center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/100017619.png" alt="mark"></center><br>个人博客：<a href="http:zhangzhongquan.com/" title="个人博客" target="_blank" rel="external">http:zhangzhongquan.com/</a><br>知乎：<a href="https://www.zhihu.com/people/zhang-zhong-quan-38/activities" title="知乎" target="_blank" rel="external">https://www.zhihu.com/people/zhang-zhong-quan-38/activities</a></p>
+
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/03/15/Bootstrap学习笔记(四)-表单1/">Bootstrap学习笔记(四)-表单1</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">张忠全</a></p>
+        <p><span>发布时间:</span>2017-03-15, 00:00:00</p>
+        <p><span>最后更新:</span>2017-03-16, 03:57:43</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/03/15/Bootstrap学习笔记(四)-表单1/" title="Bootstrap学习笔记(四)-表单1">zhangzhongquan.com/2017/03/15/Bootstrap学习笔记(四)-表单1/</a>
+            <span class="copy-path" data-clipboard-text="原文: zhangzhongquan.com/2017/03/15/Bootstrap学习笔记(四)-表单1/　　作者: 张忠全" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/03/16/Bootstrap学习笔记(五)-表单2/">
+                    Bootstrap学习笔记(五)-表单2.md
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/03/11/Bootstrap学习笔记(二)/">
+                    Bootstrap学习笔记(二)
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/03/15/Bootstrap学习笔记(四)-表单1/" class="archive-article-date">
-      <time datetime="2017-03-14T16:00:00.000Z" itemprop="datePublished">03-15</time>
-</a>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
 
 
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
         </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/15/Bootstrap学习笔记(四)-表单1/">Bootstrap学习笔记(四)-表单1</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Bootstrap学习笔记(四)-表单1　| zhangzhongquan　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
     
+
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/03/11/Bootstrap学习笔记(二)/" class="archive-article-date">
-      <time datetime="2017-03-10T16:00:00.000Z" itemprop="datePublished">03-11</time>
-</a>
+</div>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/11/Bootstrap学习笔记(二)/">Bootstrap学习笔记(二)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/03/11/Bootstrap学习笔记（三）—排版_/" class="archive-article-date">
-      <time datetime="2017-03-10T16:00:00.000Z" itemprop="datePublished">03-11</time>
-</a>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/11/Bootstrap学习笔记（三）—排版_/">Bootstrap学习笔记(三)-排版基础</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/03/06/bootstrap学习笔记(一)/" class="archive-article-date">
-      <time datetime="2017-03-05T16:00:00.000Z" itemprop="datePublished">03-06</time>
-</a>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/06/bootstrap学习笔记(一)/">bootstrap学习笔记(一)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/01/26/前端学习笔记jquery01/" class="archive-article-date">
-      <time datetime="2017-01-25T18:15:21.000Z" itemprop="datePublished">01-26</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/01/26/前端学习笔记jquery01/">前端的学习笔记01||jQuery的优势</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/01/25/解忧杂货店/" class="archive-article-date">
-      <time datetime="2017-01-24T16:00:00.000Z" itemprop="datePublished">01-25</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/01/25/解忧杂货店/">在十字路口，我捡到一本书：《解忧杂货店》</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/03/16/Bootstrap学习笔记(五)-表单2/" title="上一篇: Bootstrap学习笔记(五)-表单2.md">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2017/03/11/Bootstrap学习笔记(二)/" title="下一篇: Bootstrap学习笔记(二)">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/16/Bootstrap学习笔记(五)-表单2/">Bootstrap学习笔记(五)-表单2.md</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/15/Bootstrap学习笔记(四)-表单1/">Bootstrap学习笔记(四)-表单1</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/Bootstrap学习笔记(二)/">Bootstrap学习笔记(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/Bootstrap学习笔记（三）—排版_/">Bootstrap学习笔记(三)-排版基础</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/06/bootstrap学习笔记(一)/">bootstrap学习笔记(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/26/前端学习笔记jquery01/">前端的学习笔记01||jQuery的优势</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/25/解忧杂货店/">在十字路口，我捡到一本书：《解忧杂货店》</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
