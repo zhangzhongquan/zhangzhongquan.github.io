@@ -15,20 +15,19 @@
 
 
 
-<meta name="description" content="##bootstrap表单">
+<meta name="description" content="##bootstrap表单-多选框和单选框">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Bootstrap学习笔记(五)-表单2.md">
-<meta property="og:url" content="zhangzhongquan.com/2017/03/16/Bootstrap学习笔记(五)-表单2/index.html">
+<meta property="og:title" content="Bootstrap学习笔记(六)-表单/多选框和单选框.md">
+<meta property="og:url" content="zhangzhongquan.com/2017/03/16/Bootstrap学习笔记(六)-表单多选框和单选框/index.html">
 <meta property="og:site_name" content="zhangzhongquan">
-<meta property="og:description" content="##bootstrap表单">
+<meta property="og:description" content="##bootstrap表单-多选框和单选框">
 <meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg">
-<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170315/114105662.png">
-<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170315/115315850.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170315/121750144.png">
 <meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/100017619.png">
-<meta property="og:updated_time" content="2017-03-15T20:01:13.407Z">
+<meta property="og:updated_time" content="2017-03-15T20:09:09.674Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bootstrap学习笔记(五)-表单2.md">
-<meta name="twitter:description" content="##bootstrap表单">
+<meta name="twitter:title" content="Bootstrap学习笔记(六)-表单/多选框和单选框.md">
+<meta name="twitter:description" content="##bootstrap表单-多选框和单选框">
 <meta name="twitter:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
@@ -61,7 +60,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Bootstrap学习笔记(五)-表单2.md | zhangzhongquan</title>
+<title>Bootstrap学习笔记(六)-表单/多选框和单选框.md | zhangzhongquan</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -269,10 +268,10 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-Bootstrap学习笔记(五)-表单2" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Bootstrap学习笔记(六)-表单多选框和单选框" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/03/16/Bootstrap学习笔记(五)-表单2/" class="article-date">
+      <a href="/2017/03/16/Bootstrap学习笔记(六)-表单多选框和单选框/" class="article-date">
       <time datetime="2017-03-15T16:00:00.000Z" itemprop="datePublished">2017-03-16</time>
 </a>
 
@@ -288,7 +287,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Bootstrap学习笔记(五)-表单2.md
+      Bootstrap学习笔记(六)-表单/多选框和单选框.md
     </h1>
   
 
@@ -305,70 +304,18 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <excerpt in="" index="" |="" 首页摘要=""> 
-
-<p><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark">  </p>
-<p>##bootstrap表单<br><a id="more"></a></p>
+        <p><excerpt in="" index="" |="" 首页摘要=""><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark">   </excerpt></p>
+<p>##bootstrap表单-多选框和单选框<br><a id="more"></a></p>
 <the rest="" of="" contents="" |="" 余下全文="">
 
 <ul>
-<li>##知识点二<br>1.在.input-group类下的类input-group-addon中可以为输入框添加符号或数字<br>2.给form添加类.form-horizontal结合预栅格可实现lable和表单控件水平排列<br><center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170315/114105662.png" alt="mark"></center><br><center><strong><em>图片一</em></strong></center><br>代码:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"> </div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</div><div class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</div><div class="line">    &lt;title&gt;Dome02&lt;/title&gt;</div><div class="line">    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;div class=&quot;container&quot;&gt;</div><div class="line">    &lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;form-inline form-horizontal&quot; &gt;</div><div class="line">        &lt;fieldset&gt;</div><div class="line">            &lt;legend&gt;用户登录&lt;/legend&gt;</div><div class="line">            &lt;div class=&quot;form-group&quot;&gt;</div><div class="line">                &lt;lable&gt;用户名：&lt;/lable&gt;</div><div class="line">                &lt;div class=&quot;input-group&quot;&gt;</div><div class="line">                    &lt;div class=&quot;input-group-addon&quot;&gt;$&lt;/div&gt;</div><div class="line">                    &lt;input type=&quot;text&quot; name=&quot;name&quot; placeholder=&quot;输入用户名&quot; class=&quot;form-control&quot;&gt;</div><div class="line">                    &lt;div class=&quot;input-group-addon&quot;&gt;0.0&lt;/div&gt;</div><div class="line">                &lt;/div&gt;</div><div class="line"></div><div class="line">            &lt;/div&gt;</div><div class="line">        &lt;/fieldset&gt;</div><div class="line">    &lt;/form&gt;</div><div class="line"></div><div class="line">&lt;/div&gt;</div><div class="line">&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<li>##知识点三<br>1.多选框或单选框都放在lable标签内<br>2.在lable标签中使用checkbox或radio类定义是多选还是单选<br>3..disable类禁止某个选项<br>4.通过将 .checkbox-inline 或 .radio-inline 类应用到一系列的多选框（checkbox）或单选框（radio）控件上，可以使这些控件排列在一行。<br><center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170315/121750144.png" alt="mark"><br></center><br><center><strong><em>图片</em></strong></center><br>代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</div><div class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</div><div class="line">    &lt;title&gt;Dome05&lt;/title&gt;</div><div class="line">    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;div class=&quot;container&quot;&gt;</div><div class="line">    &lt;div class=&quot;checkbox checkbox-inline&quot;&gt;</div><div class="line">        &lt;label &gt;</div><div class="line">            &lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;</div><div class="line">            Option one is this and that&amp;mdash;be sure to include why it&apos;s great</div><div class="line">        &lt;/label&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div class=&quot;checkbox checkbox-inline&quot;&gt;</div><div class="line">        &lt;label&gt;</div><div class="line">            &lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;</div><div class="line">            Option one is this and that&amp;mdash;be sure to include why it&apos;s great2</div><div class="line">        &lt;/label&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div class=&quot;checkbox disabled&quot;&gt;</div><div class="line">        &lt;label&gt;</div><div class="line">            &lt;input type=&quot;checkbox&quot; value=&quot;&quot; disabled&gt;</div><div class="line">            Option two is disabled</div><div class="line">        &lt;/label&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line"></div><div class="line">    &lt;div class=&quot;radio&quot;&gt;</div><div class="line">        &lt;label&gt;</div><div class="line">            &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios1&quot; value=&quot;option1&quot; checked&gt;</div><div class="line">            Option one is this and that&amp;mdash;be sure to include why it&apos;s great</div><div class="line">        &lt;/label&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div class=&quot;radio&quot;&gt;</div><div class="line">        &lt;label&gt;</div><div class="line">            &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios2&quot; value=&quot;option2&quot;&gt;</div><div class="line">            Option two can be something else and selecting it will deselect option one</div><div class="line">        &lt;/label&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div class=&quot;radio disabled&quot;&gt;</div><div class="line">        &lt;label&gt;</div><div class="line">            &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios3&quot; value=&quot;option3&quot; disabled&gt;</div><div class="line">            Option three is disabled</div><div class="line">        &lt;/label&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <hr>
-<p><center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170315/115315850.png" alt="mark"><br></center></p>
-<p><center><strong><em>图片二</em></strong></center><br>代码二</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Dome02&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class=&quot;container&quot;&gt;
-    &lt;form class=&quot;form-horizontal&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Email&lt;/label&gt;
-            &lt;div class=&quot;col-sm-10&quot;&gt;
-                &lt;div class=&quot;input-group&quot;&gt;
-                    &lt;div class=&quot;input-group-addon&quot;&gt;$&lt;/div&gt;
-                    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot;&gt;
-                    &lt;div class=&quot;input-group-addon&quot;&gt;#&lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label for=&quot;inputPassword3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;
-            &lt;div class=&quot;col-sm-10&quot;&gt;
-                &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword3&quot; placeholder=&quot;Password&quot;&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
-                &lt;div class=&quot;checkbox&quot;&gt;
-                    &lt;label&gt;
-                        &lt;input type=&quot;checkbox&quot;&gt; Remember me
-                    &lt;/label&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
-                &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Sign in&lt;/button&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/form&gt;
-&lt;/div&gt;
-&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-</code></pre><hr>
 <p>请关注我：</p>
 <p><center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/100017619.png" alt="mark"></center><br>个人博客：<a href="http:zhangzhongquan.com/" title="个人博客" target="_blank" rel="external">http:zhangzhongquan.com/</a><br>知乎：<a href="https://www.zhihu.com/people/zhang-zhong-quan-38/activities" title="知乎" target="_blank" rel="external">https://www.zhihu.com/people/zhang-zhong-quan-38/activities</a></p>
-</the></excerpt>
+</the>
       
     </div>
     
@@ -376,13 +323,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/03/16/Bootstrap学习笔记(五)-表单2/">Bootstrap学习笔记(五)-表单2.md</a></p>
+        <p><span>本文标题:</span><a href="/2017/03/16/Bootstrap学习笔记(六)-表单多选框和单选框/">Bootstrap学习笔记(六)-表单/多选框和单选框.md</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">张忠全</a></p>
         <p><span>发布时间:</span>2017-03-16, 00:00:00</p>
-        <p><span>最后更新:</span>2017-03-16, 04:01:13</p>
+        <p><span>最后更新:</span>2017-03-16, 04:09:09</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/03/16/Bootstrap学习笔记(五)-表单2/" title="Bootstrap学习笔记(五)-表单2.md">zhangzhongquan.com/2017/03/16/Bootstrap学习笔记(五)-表单2/</a>
-            <span class="copy-path" data-clipboard-text="原文: zhangzhongquan.com/2017/03/16/Bootstrap学习笔记(五)-表单2/　　作者: 张忠全" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/03/16/Bootstrap学习笔记(六)-表单多选框和单选框/" title="Bootstrap学习笔记(六)-表单/多选框和单选框.md">zhangzhongquan.com/2017/03/16/Bootstrap学习笔记(六)-表单多选框和单选框/</a>
+            <span class="copy-path" data-clipboard-text="原文: zhangzhongquan.com/2017/03/16/Bootstrap学习笔记(六)-表单多选框和单选框/　　作者: 张忠全" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -394,10 +341,16 @@
 
     <nav id="article-nav">
         
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/03/16/Bootstrap学习笔记(五)-表单2/">
+                    Bootstrap学习笔记(五)-表单2.md
+                </a>
+            </div>
+        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2017/03/16/Bootstrap学习笔记(六)-表单多选框和单选框/">
-                    Bootstrap学习笔记(六)-表单/多选框和单选框.md
+                <a href="/2017/03/15/Bootstrap学习笔记(四)-表单1/">
+                    Bootstrap学习笔记(四)-表单1
                 </a>
             </div>
         
@@ -445,7 +398,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Bootstrap学习笔记(五)-表单2.md　| zhangzhongquan　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"Bootstrap学习笔记(六)-表单/多选框和单选框.md　| zhangzhongquan　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -465,13 +418,15 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2017/03/16/Bootstrap学习笔记(五)-表单2/" title="上一篇: Bootstrap学习笔记(五)-表单2.md">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/03/16/Bootstrap学习笔记(六)-表单多选框和单选框/" title="下一篇: Bootstrap学习笔记(六)-表单/多选框和单选框.md">
+            <a href="/2017/03/15/Bootstrap学习笔记(四)-表单1/" title="下一篇: Bootstrap学习笔记(四)-表单1">
                 <i class="fa fa-angle-right"></i>
             </a>
         
