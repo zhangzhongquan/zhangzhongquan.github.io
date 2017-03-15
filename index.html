@@ -296,64 +296,9 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p><excerpt in="" index="" |="" 首页摘要=""><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark">    </excerpt></p>
+              <p><Excerpt in index | 首页摘要><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark">    </p>
 <p>##bootstrap下拉框/静态控件/help text</p>
-<!-- more余下全文-->
-<the rest="" of="" contents="" |="" 余下全文="">
-
-<ul>
-<li>##知识点 四：<br> 1.下拉框select中添加multiple属性值则默认该下拉框显示多选项。<br> 2.如果需要在表单中将一行纯文本和 label 元素放置于同一行，为 <p> 元素添加  .form-control-static 类即可。且 lable需要.control-lable类排版才会更好。<br> 3.如果为表单增加帮助文本，只需要在添加控件之后或之前使用span标签，并添加help-block类。</p></li>
-</ul>
-<hr>
-<ul>
-<li>##以下为知点例图和代码<center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170316/052815224.png" alt="mark"><br></center><br><center><strong><em>图片1</em></strong></center>
-
-
-</li>
-</ul>
-<p>代码1：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</div><div class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</div><div class="line">    &lt;title&gt;Dome06&lt;/title&gt;</div><div class="line">    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;div class=&quot;container&quot;&gt;</div><div class="line">    &lt;form class=&quot;form-horizontal&quot;&gt;</div><div class="line">        &lt;div class=&quot;form-group&quot;&gt;</div><div class="line">            &lt;label class=&quot;col-sm-2 control-label&quot;&gt;爱好：&lt;/label&gt;</div><div class="line">            &lt;div class=&quot;col-sm-10&quot;&gt;</div><div class="line">                &lt;select  class=&quot;form-control&quot;&gt;</div><div class="line">                    &lt;option &gt;1&lt;/option&gt;</div><div class="line">                    &lt;option &gt;2&lt;/option&gt;</div><div class="line">                    &lt;option&gt;3&lt;/option&gt;</div><div class="line">                    &lt;option&gt;4&lt;/option&gt;</div><div class="line">                    &lt;option&gt;5&lt;/option&gt;</div><div class="line">                &lt;/select&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">        &lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;</div><div class="line">            &lt;label class=&quot;col-sm-2 control-label&quot;&gt;爱好：&lt;/label&gt;</div><div class="line">            &lt;div class=&quot;col-sm-10&quot;&gt;</div><div class="line">                &lt;select multiple class=&quot;form-control&quot;&gt;</div><div class="line">                    &lt;option&gt;1&lt;/option&gt;</div><div class="line">                    &lt;option&gt;2&lt;/option&gt;</div><div class="line">                    &lt;option&gt;3&lt;/option&gt;</div><div class="line">                    &lt;option&gt;4&lt;/option&gt;</div><div class="line">                    &lt;option&gt;5&lt;/option&gt;</div><div class="line">                &lt;/select&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">        &lt;/div&gt;</div><div class="line"></div><div class="line">    &lt;/form&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
-<center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170316/050553559.png" alt="mark"><br></center><br><center><strong><em>图片2~3</em></strong></center>
-
-
-<p>代码2~3：</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Dome06&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class=&quot;container&quot;&gt;
-    &lt;form class=&quot;form-horizontal&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label class=&quot;col-sm-2 control-label&quot;&gt;Blog&lt;/label&gt;
-            &lt;div class=&quot;col-sm-10&quot;&gt;
-                &lt;p class=&quot;form-control-static&quot;&gt;zhangzhongquan.com&lt;/p&gt;
-                &lt;!--form-control-static实现纯文本和lable放在一起--&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label for=&quot;inputPassword&quot; class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;
-            &lt;div class=&quot;col-sm-10&quot;&gt;
-                &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword&quot; placeholder=&quot;Password&quot;&gt;
-                &lt;span class=&quot;help-block&quot;&gt;你只可以尝试输入三次，超多三次被锁定，2个小时后才会自动解锁&lt;/span&gt;
-                &lt;!--help-block定义帮助文本--&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/form&gt;
-&lt;/div&gt;
-&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><p>```</p>
-<hr>
-<p>请关注我：</p>
-<p><center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/100017619.png" alt="mark"></center><br>个人博客：<a href="http:zhangzhongquan.com/" title="个人博客" target="_blank" rel="external">http:zhangzhongquan.com/</a><br>知乎：<a href="https://www.zhihu.com/people/zhang-zhong-quan-38/activities" title="知乎" target="_blank" rel="external">https://www.zhihu.com/people/zhang-zhong-quan-38/activities</a></p>
-</the>
+          
       
     </div>
     
@@ -362,6 +307,10 @@
       
 
       
+      
+        <p class="article-more-link">
+          <a href="/2017/03/16/Bootstrap学习笔记(七)-表单4/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
