@@ -15,22 +15,27 @@
 
 
 
-<meta name="description" content="##bootstrap排版">
+<meta name="description" content="##bootstrap栅格统的使用方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Bootstrap学习笔记(3)-排版基础">
-<meta property="og:url" content="zhangzhongquan.com/2017/03/11/Bootstrap学习笔记（三）—排版_/index.html">
+<meta property="og:title" content="Bootstrap学习笔记(2)-栅格原理2">
+<meta property="og:url" content="zhangzhongquan.com/2017/03/10/Bootstrap学习笔记(二)/index.html">
 <meta property="og:site_name" content="zhangzhongquan">
-<meta property="og:description" content="##bootstrap排版">
+<meta property="og:description" content="##bootstrap栅格统的使用方法">
 <meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg">
-<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/073900425.png">
-<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/083249844.png">
-<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/090714840.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/033324937.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/033423135.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/051142321.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/051542198.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/052543841.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/052850325.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055145942.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055452806.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055452806.png">
 <meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/053443178.jpg">
-<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/063204206.png">
-<meta property="og:updated_time" content="2017-03-16T21:24:13.681Z">
+<meta property="og:updated_time" content="2017-03-16T21:24:33.085Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bootstrap学习笔记(3)-排版基础">
-<meta name="twitter:description" content="##bootstrap排版">
+<meta name="twitter:title" content="Bootstrap学习笔记(2)-栅格原理2">
+<meta name="twitter:description" content="##bootstrap栅格统的使用方法">
 <meta name="twitter:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
@@ -63,7 +68,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Bootstrap学习笔记(3)-排版基础 | zhangzhongquan</title>
+<title>Bootstrap学习笔记(2)-栅格原理2 | zhangzhongquan</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -271,11 +276,11 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap"><article id="post-Bootstrap学习笔记（三）—排版_" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Bootstrap学习笔记(二)" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/03/11/Bootstrap学习笔记（三）—排版_/" class="article-date">
-      <time datetime="2017-03-10T16:00:00.000Z" itemprop="datePublished">2017-03-11</time>
+      <a href="/2017/03/10/Bootstrap学习笔记(二)/" class="article-date">
+      <time datetime="2017-03-09T16:00:00.000Z" itemprop="datePublished">2017-03-10</time>
 </a>
 
 
@@ -290,7 +295,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Bootstrap学习笔记(3)-排版基础
+      Bootstrap学习笔记(2)-栅格原理2
     </h1>
   
 
@@ -307,39 +312,93 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p><excerpt in="" index="" |="" 首页摘要=""><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark">    </excerpt></p>
-<p>##bootstrap排版</p>
+        <p><excerpt in="" index="" |="" 首页摘要=""><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark">     </excerpt></p>
+<p>##bootstrap栅格统的使用方法</p>
 <a id="more"></a>
 <the rest="" of="" contents="" |="" 余下全文="">
 
 <ul>
-<li><p>###响应式图片</p>
-<p>  在 Bootstrap 版本 3 中，通过为图片添加 .img-responsive 类可以让图片支持响应式布局。其实质是为图片设置了 max-width: 100%;、 height: auto; 和 display: block; 属性，从而让图片在其父元素中更好的缩放。</p>
+<li><p>###布局容器和列组合</p>
+<p>  bootstrap 需要为页面内容和栅格系统包裹一个.container容器。我们提供了两个作此用处的类。注意，由于 padding 等属性的原因，这两种 容器类不能互相嵌套。</p>
+<ol>
+<li>.container 类用于固定宽度并支持响应式布局的容器。</li>
+<li>.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。</li>
+</ol>
 </li>
 </ul>
-<pre><code>  &lt;center&gt;
-![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/065040116.png)
-&lt;/center&gt;
-&lt;center&gt;*网页缩小前*&lt;/center&gt;
-&lt;center&gt;
-![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/065129812.png)
-&lt;/center&gt;
-&lt;center&gt;*网页缩小后*&lt;/center&gt;
-</code></pre><p> 代码:</p>
+<hr>
+<p>###例1：移动设备和桌面屏幕</p>
+<center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/033324937.png" alt="mark"><br></center><br><center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/033423135.png" alt="mark"><br></center>
+
+<p> 代码:</p>
 <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;Dome02&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+    &lt;style&gt;
+        div{
+            border:1px solid #333333;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-12 col-md-8&quot;&gt;.col-xs-12 .col-md-8&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-6 &quot;&gt;.col-xs-6 &lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 &quot;&gt;.col-xs-6 &lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 &quot;&gt;.col-xs-6 &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><hr>
+<pre><code>###   例2.手机平板桌面
+&lt;center&gt;![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/041203537.png)&lt;/center&gt;
+&lt;center&gt;***平板显示***&lt;/center&gt;
+&lt;center&gt;![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/041347333.png)&lt;/center&gt;
+&lt;center&gt;***平板桌面显示***&lt;/center&gt;
+代码：
+
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
     &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Dome08&lt;/title&gt;
+    &lt;title&gt;Dome03&lt;/title&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+    &lt;style&gt;
+        div{
+            border:1px solid #333333;
+        }
+    &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
 &lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-md-3&quot;&gt;&lt;img src=&quot;imangs/timg.jpg&quot; class=&quot;img-responsive&quot;/&gt;&lt;/div&gt;
-        &lt;div class=&quot;col-md-3&quot;&gt;&lt;img src=&quot;imangs/23.jpg&quot; class=&quot;img-responsive &quot;/&gt;&lt;/div&gt;
+        &lt;div class=&quot;col-xs-12 col-sm-6 col-md-8&quot;&gt;.col-xs-12.col-sm-6.col-md-8&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6.col-sm-4&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6.col-sm-4&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6.col-sm-4&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 &lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
@@ -348,97 +407,103 @@
 &lt;/html&gt;
 </code></pre><hr>
 <ul>
-<li>###副标题small<br>  在标题内还可以包含 <small> 标签或赋予 .small 类的元素，可以用来标记副标题。</small></li>
-<li><p>###列表<br>  .list-unstyled可以将列表的圆点或数字样式去掉<br>  .list-inline可以将列表放在一行，便于做导航<br>  .dl-horizontal可去掉定义列表中说明的缩进并将定义词和说明放在一行、</p>
-   <center><br>  <img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/073900425.png" alt="mark"><br>  </center>
-
+<li><p>###列偏移：</p>
+<p> 使用 .col-md-offset-<em> 类可以将列向右侧偏移。这些类实际是通过使用 </em> 选择器为当前元素增加了左侧的边距（margin）。例如，.col-md-offset-4 类将 .col-md-4 元素向右侧偏移了4个列（column）的宽度。</p>
 </li>
 </ul>
-<p>代码：</p>
-<pre><code>    &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Dome02&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class=&quot;container&quot;&gt;
-        &lt;ul class=&quot;list-unstyled&quot;&gt;&lt;!--去掉无序列表的圆点--&gt;
-            &lt;li&gt;中国&lt;/li&gt;
-            &lt;li&gt;美国&lt;/li&gt;
-            &lt;li&gt;日本&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;hr&gt;
-        &lt;ol class=&quot;list-unstyled&quot;&gt;&lt;!--去掉有序列表的数字--&gt;
-            &lt;li&gt;中国&lt;/li&gt;
-            &lt;li&gt;美国&lt;/li&gt;
-            &lt;li&gt;日本&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;ol class=&quot;list-inline&quot;&gt;&lt;!--去掉有序列表的数字并将列表放在一行--&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;中国&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;美国&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;日本&lt;/a&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;hr&gt;
-        &lt;ol &gt;&lt;!--去下划线后不做任何样式的列表--&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;中国&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;美国&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;日本&lt;/a&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;dl&gt;&lt;!--去掉默认缩进的定义列表--&gt;
-            &lt;dt&gt;九州&lt;/dt&gt;
-            &lt;dd&gt;九州是遥控、潘海天、今何在、水泡、江南、斩鞍、多事七个奇幻作家共同创造的拥有详细设定的架空世界，是所有有关九州的奇幻小说所共享的基础世界。九州是遥控、潘海天、今何在、水泡、江南、斩鞍、多事七个奇幻作家共同创造的拥有详细设定的架空世界，是所有有关九州的奇幻小说所共享的基础世界。&lt;/dd&gt;
-        &lt;/dl&gt;
-    &lt;hr&gt;
-        &lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;!--去掉默认缩进并和定义词为一行的定义列表--&gt;
-            &lt;dt&gt;九州大地&lt;/dt&gt;
-            &lt;dd&gt;九州是遥控、潘海天、今何在、水泡、江南、斩鞍、多事七个奇幻作家共同创造的拥有详细设定的架空世界，是所有有关九州的奇幻小说所共享的基础世界。九州是遥控、潘海天、今何在、水泡、江南、斩鞍、多事七个奇幻作家共同创造的拥有详细设定的架空世界，是所有有关九州的奇幻小说所共享的基础世界。&lt;/dd&gt;
-        &lt;/dl&gt;
-&lt;/div&gt;
-&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><h2 id="———————"><a href="#———————" class="headerlink" title="———————-"></a>———————-</h2><ul>
-<li>###code保存代码和kbd实现黑底白字效果</li>
-<li><pre>保持代码格式</pre></li>
-<li>var输入变量</li>
-<li>samp输出</li>
-</ul>
-<center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/083249844.png" alt="mark"><br></center>
+<pre><code>例：列偏移
 
-<p>代码：</p>
+&lt;center&gt;![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/045132193.png)&lt;/center&gt;
+&lt;center&gt;***偏移前***&lt;/center&gt;
+
+&lt;center&gt;![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/045856303.png)&lt;/center&gt;
+&lt;center&gt;***偏移*后**&lt;/center&gt;
+代码：
+
+
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        &lt;title&gt;Dome02&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+        &lt;style&gt;
+            div{
+                border: 1px solid #000000;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+            &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;&lt;!--列偏移开始--&gt;
+            &lt;div class=&quot;col-md-3 col-md-offset-2&quot;&gt;col-md-3&lt;/div&gt;
+            &lt;div class=&quot;col-md-2 col-md-offset-3&quot;&gt;col-md-2&lt;/div&gt;
+        &lt;/div&gt;&lt;!--列偏移结束--&gt;
+    &lt;/div&gt;
+    &lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre><hr>
+<ul>
+<li><p>###列嵌套：<br> 为了使用内置的栅格系统将内容再次嵌套，可以通过添加一个新的 .row 元素和一系列 .col-sm-<em> 元素到已经存在的 .col-sm-</em> 元素内。被嵌套的行（row）所包含的列（column）的个数不能超过12（其实，没有要求你必须占满12列）。</p>
+<p> 例：列嵌套</p>
+ <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/051142321.png" alt="mark"></center><br> <center><strong><em>嵌套前</em></strong></center>        
+
+ <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/051542198.png" alt="mark"></center><br> <center><strong><em>嵌套后</em></strong></center>
+
+<p> 代码：</p>
+</li>
+</ul>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Dome02&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Dome05&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+&lt;style&gt;
+    div{
+        border: 1px solid #000000;
+    }
+&lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
 &lt;div class=&quot;container&quot;&gt;
-    这是一段代码：&lt;code&gt;This text is meant to be treated as sample output from a&lt;/code&gt;
-    请&lt;kbd&gt;ctl+c&lt;/kbd&gt;复制。
-    &lt;hr&gt;
-    &lt;pre&gt;
-       public class hello
-        {
-            public static void main(string agas[])
-            {
-                ini i=10;
-                System.out.print(&quot;hello java&quot;);
-            }
-        }
-   &lt;/pre&gt;
-    &lt;samp&gt;hello java&lt;/samp&gt;
-    &lt;hr&gt;
-    &lt;var&gt;z&lt;/var&gt;=&lt;var&gt;x&lt;/var&gt;+&lt;var&gt;y&lt;/var&gt;;
-
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+    &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;!--列偏移--&gt;
+    &lt;div class=&quot;col-md-3 col-md-offset-2&quot;&gt;col-md-3&lt;/div&gt;
+    &lt;div class=&quot;col-md-2 col-md-offset-3&quot;&gt;col-md-2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;!--列嵌套开始--&gt;
+    &lt;div class=&quot;col-xs-8&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-xs-6&quot;&gt;6&lt;/div&gt;
+            &lt;div class=&quot;col-xs-6&quot;&gt;6&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs-4&quot;&gt;4&lt;/div&gt;
+&lt;/div&gt;&lt;!--列嵌套结束--&gt;
 &lt;/div&gt;
 &lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
@@ -446,128 +511,101 @@
 &lt;/html&gt;
 </code></pre><hr>
 <ul>
-<li>###响应式表格<br>  将任何 .table 元素包裹在 .table-responsive 元素内，即可创建响应式表格，其会在小屏幕设备上（小于768px）水平滚动。当屏幕大于 768px 宽度时，水平滚动条消失。</li>
-</ul>
-<center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/090714840.png" alt="mark"><br></center>
+<li><p>###列排序</p>
+<p>  通过使用 .col-md-push-<em> （向右推）和 .col-md-pull-</em>（向左拉） 类就可以很容易的改变列（column）的顺序。</p>
+<p>  例:列排序</p>
+  <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/052543841.png" alt="mark"></center><br>  <center><strong><em>排序前</em></strong></center>
 
-<p>代码：</p>
+<p>  <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/052850325.png" alt="mark"></center><br>  <center><strong><em>排序后</em></strong></center><br>  代码：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Dome06&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+&lt;style&gt;
+    div{
+        border: 1px solid #000000;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+    &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;!--列偏移--&gt;
+    &lt;div class=&quot;col-md-3 col-md-offset-2&quot;&gt;col-md-3&lt;/div&gt;
+    &lt;div class=&quot;col-md-2 col-md-offset-3&quot;&gt;col-md-2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;!--列嵌套开始--&gt;
+    &lt;div class=&quot;col-xs-8&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-xs-6&quot;&gt;6&lt;/div&gt;
+            &lt;div class=&quot;col-xs-6&quot;&gt;6&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs-4&quot;&gt;4&lt;/div&gt;
+&lt;/div&gt;&lt;!--列嵌套结束--&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;!--列排序开始--&gt;
+    &lt;div class=&quot;col-md-3 col-md-push-7&quot;&gt;col-md-3&lt;/div&gt;
+    &lt;div class=&quot;col-md-2 col-md-pull-2&quot;&gt;col-md-2&lt;/div&gt;
+&lt;/div&gt;&lt;!--列排序结束--&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+<li><p>###清除浮动<br>  在某些阈值时，某些列可能会出现比别的列高的情况。为了克服这一问题，建议联合使用 .clearfix</p>
+<p>  例：清除浮动</p>
+  <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055145942.png" alt="mark"></center><br>  <center><strong><em>清除前超阈值宽屏</em></strong></center>
+
+  <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055452806.png" alt="mark"></center><br>  <center><strong><em>清除浮动前超阈值窄屏</em></strong></center>
+
+<p>  <center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/055452806.png" alt="mark"></center><br>  <center><strong><em>清除浮动前超阈值窄屏</em></strong></center><br>  <center></center></p>
+<pre><code>![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170308/060139562.png)&lt;/center&gt;
+</code></pre><p>  <center><strong><em>清除浮动后超阈值窄屏</em></strong></center><br>  代码：</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
     &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Dome11&lt;/title&gt;
+    &lt;title&gt;Dome07&lt;/title&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+    &lt;style&gt;
+        div{
+            border: 1px solid #333333;
+        }
+    &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
 &lt;div class=&quot;container&quot;&gt;
-    &lt;table class=&quot;table table-striped&quot;&gt;&lt;!--1..table实现自适应表格,2..table-striped实现条纹样式--&gt;
-        &lt;caption&gt;自适应+条纹&lt;/caption&gt;
-        &lt;tr&gt;
-            &lt;th&gt;序列号&lt;/th&gt;
-            &lt;th&gt;姓名&lt;/th&gt;
-            &lt;th&gt;年龄&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;张三&lt;/td&gt;
-            &lt;td&gt;29&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;李四&lt;/td&gt;
-            &lt;td&gt;26&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;3&lt;/td&gt;
-            &lt;td&gt;王五&lt;/td&gt;
-            &lt;td&gt;22&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-    &lt;br&gt;
-    &lt;table class=&quot;table table-striped table-bordered&quot;&gt;&lt;!--.table-border实现边框--&gt;
-        &lt;caption &gt;自适应+条纹+边框&lt;/caption&gt;
-        &lt;tr&gt;
-            &lt;th&gt;序列号&lt;/th&gt;
-            &lt;th&gt;姓名&lt;/th&gt;
-            &lt;th&gt;年龄&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;张三&lt;/td&gt;
-            &lt;td&gt;29&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;李四&lt;/td&gt;
-            &lt;td&gt;26&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;3&lt;/td&gt;
-            &lt;td&gt;王五&lt;/td&gt;
-            &lt;td&gt;22&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-    &lt;table class=&quot;table table-striped table-bordered table-hover&quot;&gt;&lt;!--.table-border实现边框--&gt;
-        &lt;caption &gt;自适应+条纹+边框+悬停&lt;/caption&gt;
-        &lt;tr&gt;
-            &lt;th&gt;序列号&lt;/th&gt;
-            &lt;th&gt;姓名&lt;/th&gt;
-            &lt;th&gt;年龄&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;张三&lt;/td&gt;
-            &lt;td&gt;29&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;李四&lt;/td&gt;
-            &lt;td&gt;26&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;3&lt;/td&gt;
-            &lt;td&gt;王五&lt;/td&gt;
-            &lt;td&gt;22&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-    &lt;table class=&quot;table table-striped table-bordered table-hover table-condensed&quot;&gt;&lt;!--.table-border实现边框--&gt;
-        &lt;caption &gt;自适应+条纹+边框+悬停+紧凑型&lt;/caption&gt;
-        &lt;tr&gt;
-            &lt;th&gt;序列号&lt;/th&gt;
-            &lt;th&gt;姓名&lt;/th&gt;
-            &lt;th&gt;年龄&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;张三&lt;/td&gt;
-            &lt;td&gt;29&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;李四&lt;/td&gt;
-            &lt;td&gt;26&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;3&lt;/td&gt;
-            &lt;td&gt;王五&lt;/td&gt;
-            &lt;td&gt;22&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;col-xs-6 col-sm-3  1&lt;br/&gt;afdkfaskdfsldfjlaskdfsfa&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;col-xs-6 col-sm-3  2&lt;/div&gt;
+        &lt;div class=&quot;clearfix visible-xs&quot;&gt;&lt;/div&gt; &lt;!--清除上一行的浮动--&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;col-xs-6 col-sm-3  3&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;col-xs-6 col-sm-3  4&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><p>请关注我：<br>微信公众号</p>
-<center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/053443178.jpg" alt="mark"></center>
-
-<p>微信：</p>
-<center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/063204206.png" alt="mark"></center>
-
-<p>个人博客：<a href="http:zhangzhongquan.com/" title="个人博客" target="_blank" rel="external">http:zhangzhongquan.com/</a><br>知乎：<a href="https://www.zhihu.com/people/zhang-zhong-quan-38/activities" title="知乎" target="_blank" rel="external">https://www.zhihu.com/people/zhang-zhong-quan-38/activities</a></p>
-</the>
+</code></pre></li>
+</ul>
+<p>请关注我：</p>
+<center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/053443178.jpg" alt="mark"></center></the>
       
     </div>
     
@@ -575,13 +613,13 @@
   
     
     <div class="copyright">
-        <p><span>Title:</span><a href="/2017/03/11/Bootstrap学习笔记（三）—排版_/">Bootstrap学习笔记(3)-排版基础</a></p>
+        <p><span>Title:</span><a href="/2017/03/10/Bootstrap学习笔记(二)/">Bootstrap学习笔记(2)-栅格原理2</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">张忠全</a></p>
-        <p><span>Created:</span>2017-03-11, 00:00:00</p>
-        <p><span>Updated:</span>2017-03-17, 05:24:13</p>
+        <p><span>Created:</span>2017-03-10, 00:00:00</p>
+        <p><span>Updated:</span>2017-03-17, 05:24:33</p>
         <p>
-            <span>Full URL:</span><a class="post-url" href="/2017/03/11/Bootstrap学习笔记（三）—排版_/" title="Bootstrap学习笔记(3)-排版基础">zhangzhongquan.com/2017/03/11/Bootstrap学习笔记（三）—排版_/</a>
-            <span class="copy-path" data-clipboard-text="From zhangzhongquan.com/2017/03/11/Bootstrap学习笔记（三）—排版_/　　By 张忠全" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2017/03/10/Bootstrap学习笔记(二)/" title="Bootstrap学习笔记(2)-栅格原理2">zhangzhongquan.com/2017/03/10/Bootstrap学习笔记(二)/</a>
+            <span class="copy-path" data-clipboard-text="From zhangzhongquan.com/2017/03/10/Bootstrap学习笔记(二)/　　By 张忠全" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -594,15 +632,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2017/03/12/Bootstrap学习笔记(四)-表单1/">
-                    Bootstrap学习笔记(4)-表单1
+                <a href="/2017/03/11/Bootstrap学习笔记（三）—排版_/">
+                    Bootstrap学习笔记(3)-排版基础
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2017/03/10/Bootstrap学习笔记(二)/">
-                    Bootstrap学习笔记(2)-栅格原理2
+                <a href="/2017/03/06/bootstrap学习笔记(一)/">
+                    bootstrap学习笔记(1)-栅格原理1
                 </a>
             </div>
         
@@ -614,7 +652,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#———————"><span class="toc-number">1.</span> <span class="toc-text">———————-</span></a></li></ol>
+            
         
     </div>
     <style>
@@ -650,7 +688,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Bootstrap学习笔记(3)-排版基础　| zhangzhongquan　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"Bootstrap学习笔记(2)-栅格原理2　| zhangzhongquan　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -670,7 +708,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/03/12/Bootstrap学习笔记(四)-表单1/" title="Pre: Bootstrap学习笔记(4)-表单1">
+            <a href="/2017/03/11/Bootstrap学习笔记（三）—排版_/" title="Pre: Bootstrap学习笔记(3)-排版基础">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -678,7 +716,7 @@
         <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/03/10/Bootstrap学习笔记(二)/" title="Next: Bootstrap学习笔记(2)-栅格原理2">
+            <a href="/2017/03/06/bootstrap学习笔记(一)/" title="Next: bootstrap学习笔记(1)-栅格原理1">
                 <i class="fa fa-angle-right"></i>
             </a>
         

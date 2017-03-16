@@ -15,22 +15,20 @@
 
 
 
-<meta name="description" content="##bootstrap排版">
+<meta name="description" content="##bootstrap下拉框/静态控件/help text">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Bootstrap学习笔记(3)-排版基础">
-<meta property="og:url" content="zhangzhongquan.com/2017/03/11/Bootstrap学习笔记（三）—排版_/index.html">
+<meta property="og:title" content="Bootstrap学习笔记(7)-表单4">
+<meta property="og:url" content="zhangzhongquan.com/2017/03/15/Bootstrap学习笔记(七)-表单4/index.html">
 <meta property="og:site_name" content="zhangzhongquan">
-<meta property="og:description" content="##bootstrap排版">
+<meta property="og:description" content="##bootstrap下拉框/静态控件/help text">
 <meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg">
-<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/073900425.png">
-<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/083249844.png">
-<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/090714840.png">
-<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/053443178.jpg">
-<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/063204206.png">
-<meta property="og:updated_time" content="2017-03-16T21:24:13.681Z">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170316/052815224.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170316/050553559.png">
+<meta property="og:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/100017619.png">
+<meta property="og:updated_time" content="2017-03-16T21:23:17.953Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bootstrap学习笔记(3)-排版基础">
-<meta name="twitter:description" content="##bootstrap排版">
+<meta name="twitter:title" content="Bootstrap学习笔记(7)-表单4">
+<meta name="twitter:description" content="##bootstrap下拉框/静态控件/help text">
 <meta name="twitter:image" content="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
@@ -63,7 +61,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Bootstrap学习笔记(3)-排版基础 | zhangzhongquan</title>
+<title>Bootstrap学习笔记(7)-表单4 | zhangzhongquan</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -271,11 +269,11 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap"><article id="post-Bootstrap学习笔记（三）—排版_" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Bootstrap学习笔记(七)-表单4" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/03/11/Bootstrap学习笔记（三）—排版_/" class="article-date">
-      <time datetime="2017-03-10T16:00:00.000Z" itemprop="datePublished">2017-03-11</time>
+      <a href="/2017/03/15/Bootstrap学习笔记(七)-表单4/" class="article-date">
+      <time datetime="2017-03-14T16:00:00.000Z" itemprop="datePublished">2017-03-15</time>
 </a>
 
 
@@ -290,7 +288,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Bootstrap学习笔记(3)-排版基础
+      Bootstrap学习笔记(7)-表单4
     </h1>
   
 
@@ -308,265 +306,62 @@
       
           
         <p><excerpt in="" index="" |="" 首页摘要=""><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark">    </excerpt></p>
-<p>##bootstrap排版</p>
+<p>##bootstrap下拉框/静态控件/help text</p>
 <a id="more"></a>
 <the rest="" of="" contents="" |="" 余下全文="">
 
 <ul>
-<li><p>###响应式图片</p>
-<p>  在 Bootstrap 版本 3 中，通过为图片添加 .img-responsive 类可以让图片支持响应式布局。其实质是为图片设置了 max-width: 100%;、 height: auto; 和 display: block; 属性，从而让图片在其父元素中更好的缩放。</p>
-</li>
+<li>##知识点 四：<br> 1.下拉框select中添加multiple属性值则默认该下拉框显示多选项。<br> 2.如果需要在表单中将一行纯文本和 label 元素放置于同一行，为 <p> 元素添加  .form-control-static 类即可。且 lable需要.control-lable类排版才会更好。<br> 3.如果为表单增加帮助文本，只需要在添加控件之后或之前使用span标签，并添加help-block类。</p></li>
 </ul>
-<pre><code>  &lt;center&gt;
-![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/065040116.png)
-&lt;/center&gt;
-&lt;center&gt;*网页缩小前*&lt;/center&gt;
-&lt;center&gt;
-![mark](http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/065129812.png)
-&lt;/center&gt;
-&lt;center&gt;*网页缩小后*&lt;/center&gt;
-</code></pre><p> 代码:</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Dome08&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-md-3&quot;&gt;&lt;img src=&quot;imangs/timg.jpg&quot; class=&quot;img-responsive&quot;/&gt;&lt;/div&gt;
-        &lt;div class=&quot;col-md-3&quot;&gt;&lt;img src=&quot;imangs/23.jpg&quot; class=&quot;img-responsive &quot;/&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><hr>
+<hr>
 <ul>
-<li>###副标题small<br>  在标题内还可以包含 <small> 标签或赋予 .small 类的元素，可以用来标记副标题。</small></li>
-<li><p>###列表<br>  .list-unstyled可以将列表的圆点或数字样式去掉<br>  .list-inline可以将列表放在一行，便于做导航<br>  .dl-horizontal可去掉定义列表中说明的缩进并将定义词和说明放在一行、</p>
-   <center><br>  <img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/073900425.png" alt="mark"><br>  </center>
+<li>##以下为知点例图和代码<center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170316/052815224.png" alt="mark"><br></center><br><center><strong><em>图片1</em></strong></center>
+
 
 </li>
 </ul>
-<p>代码：</p>
-<pre><code>    &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Dome02&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class=&quot;container&quot;&gt;
-        &lt;ul class=&quot;list-unstyled&quot;&gt;&lt;!--去掉无序列表的圆点--&gt;
-            &lt;li&gt;中国&lt;/li&gt;
-            &lt;li&gt;美国&lt;/li&gt;
-            &lt;li&gt;日本&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;hr&gt;
-        &lt;ol class=&quot;list-unstyled&quot;&gt;&lt;!--去掉有序列表的数字--&gt;
-            &lt;li&gt;中国&lt;/li&gt;
-            &lt;li&gt;美国&lt;/li&gt;
-            &lt;li&gt;日本&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;ol class=&quot;list-inline&quot;&gt;&lt;!--去掉有序列表的数字并将列表放在一行--&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;中国&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;美国&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;日本&lt;/a&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;hr&gt;
-        &lt;ol &gt;&lt;!--去下划线后不做任何样式的列表--&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;中国&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;美国&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;日本&lt;/a&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;dl&gt;&lt;!--去掉默认缩进的定义列表--&gt;
-            &lt;dt&gt;九州&lt;/dt&gt;
-            &lt;dd&gt;九州是遥控、潘海天、今何在、水泡、江南、斩鞍、多事七个奇幻作家共同创造的拥有详细设定的架空世界，是所有有关九州的奇幻小说所共享的基础世界。九州是遥控、潘海天、今何在、水泡、江南、斩鞍、多事七个奇幻作家共同创造的拥有详细设定的架空世界，是所有有关九州的奇幻小说所共享的基础世界。&lt;/dd&gt;
-        &lt;/dl&gt;
-    &lt;hr&gt;
-        &lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;!--去掉默认缩进并和定义词为一行的定义列表--&gt;
-            &lt;dt&gt;九州大地&lt;/dt&gt;
-            &lt;dd&gt;九州是遥控、潘海天、今何在、水泡、江南、斩鞍、多事七个奇幻作家共同创造的拥有详细设定的架空世界，是所有有关九州的奇幻小说所共享的基础世界。九州是遥控、潘海天、今何在、水泡、江南、斩鞍、多事七个奇幻作家共同创造的拥有详细设定的架空世界，是所有有关九州的奇幻小说所共享的基础世界。&lt;/dd&gt;
-        &lt;/dl&gt;
-&lt;/div&gt;
-&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><h2 id="———————"><a href="#———————" class="headerlink" title="———————-"></a>———————-</h2><ul>
-<li>###code保存代码和kbd实现黑底白字效果</li>
-<li><pre>保持代码格式</pre></li>
-<li>var输入变量</li>
-<li>samp输出</li>
-</ul>
-<center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/083249844.png" alt="mark"><br></center>
+<p>代码1：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</div><div class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</div><div class="line">    &lt;title&gt;Dome06&lt;/title&gt;</div><div class="line">    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;div class=&quot;container&quot;&gt;</div><div class="line">    &lt;form class=&quot;form-horizontal&quot;&gt;</div><div class="line">        &lt;div class=&quot;form-group&quot;&gt;</div><div class="line">            &lt;label class=&quot;col-sm-2 control-label&quot;&gt;爱好：&lt;/label&gt;</div><div class="line">            &lt;div class=&quot;col-sm-10&quot;&gt;</div><div class="line">                &lt;select  class=&quot;form-control&quot;&gt;</div><div class="line">                    &lt;option &gt;1&lt;/option&gt;</div><div class="line">                    &lt;option &gt;2&lt;/option&gt;</div><div class="line">                    &lt;option&gt;3&lt;/option&gt;</div><div class="line">                    &lt;option&gt;4&lt;/option&gt;</div><div class="line">                    &lt;option&gt;5&lt;/option&gt;</div><div class="line">                &lt;/select&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">        &lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;</div><div class="line">            &lt;label class=&quot;col-sm-2 control-label&quot;&gt;爱好：&lt;/label&gt;</div><div class="line">            &lt;div class=&quot;col-sm-10&quot;&gt;</div><div class="line">                &lt;select multiple class=&quot;form-control&quot;&gt;</div><div class="line">                    &lt;option&gt;1&lt;/option&gt;</div><div class="line">                    &lt;option&gt;2&lt;/option&gt;</div><div class="line">                    &lt;option&gt;3&lt;/option&gt;</div><div class="line">                    &lt;option&gt;4&lt;/option&gt;</div><div class="line">                    &lt;option&gt;5&lt;/option&gt;</div><div class="line">                &lt;/select&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">        &lt;/div&gt;</div><div class="line"></div><div class="line">    &lt;/form&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170316/050553559.png" alt="mark"><br></center><br><center><strong><em>图片2~3</em></strong></center>
 
-<p>代码：</p>
+
+<p>代码2~3：</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
     &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Dome02&lt;/title&gt;
+    &lt;title&gt;Dome06&lt;/title&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
 &lt;/head&gt;
 &lt;body&gt;
 &lt;div class=&quot;container&quot;&gt;
-    这是一段代码：&lt;code&gt;This text is meant to be treated as sample output from a&lt;/code&gt;
-    请&lt;kbd&gt;ctl+c&lt;/kbd&gt;复制。
-    &lt;hr&gt;
-    &lt;pre&gt;
-       public class hello
-        {
-            public static void main(string agas[])
-            {
-                ini i=10;
-                System.out.print(&quot;hello java&quot;);
-            }
-        }
-   &lt;/pre&gt;
-    &lt;samp&gt;hello java&lt;/samp&gt;
-    &lt;hr&gt;
-    &lt;var&gt;z&lt;/var&gt;=&lt;var&gt;x&lt;/var&gt;+&lt;var&gt;y&lt;/var&gt;;
-
+    &lt;form class=&quot;form-horizontal&quot;&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;col-sm-2 control-label&quot;&gt;Blog&lt;/label&gt;
+            &lt;div class=&quot;col-sm-10&quot;&gt;
+                &lt;p class=&quot;form-control-static&quot;&gt;zhangzhongquan.com&lt;/p&gt;
+                &lt;!--form-control-static实现纯文本和lable放在一起--&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;inputPassword&quot; class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;
+            &lt;div class=&quot;col-sm-10&quot;&gt;
+                &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword&quot; placeholder=&quot;Password&quot;&gt;
+                &lt;span class=&quot;help-block&quot;&gt;你只可以尝试输入三次，超多三次被锁定，2个小时后才会自动解锁&lt;/span&gt;
+                &lt;!--help-block定义帮助文本--&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
 &lt;/div&gt;
 &lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><hr>
-<ul>
-<li>###响应式表格<br>  将任何 .table 元素包裹在 .table-responsive 元素内，即可创建响应式表格，其会在小屏幕设备上（小于768px）水平滚动。当屏幕大于 768px 宽度时，水平滚动条消失。</li>
-</ul>
-<center><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/090714840.png" alt="mark"><br></center>
-
-<p>代码：</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Dome11&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class=&quot;container&quot;&gt;
-    &lt;table class=&quot;table table-striped&quot;&gt;&lt;!--1..table实现自适应表格,2..table-striped实现条纹样式--&gt;
-        &lt;caption&gt;自适应+条纹&lt;/caption&gt;
-        &lt;tr&gt;
-            &lt;th&gt;序列号&lt;/th&gt;
-            &lt;th&gt;姓名&lt;/th&gt;
-            &lt;th&gt;年龄&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;张三&lt;/td&gt;
-            &lt;td&gt;29&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;李四&lt;/td&gt;
-            &lt;td&gt;26&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;3&lt;/td&gt;
-            &lt;td&gt;王五&lt;/td&gt;
-            &lt;td&gt;22&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-    &lt;br&gt;
-    &lt;table class=&quot;table table-striped table-bordered&quot;&gt;&lt;!--.table-border实现边框--&gt;
-        &lt;caption &gt;自适应+条纹+边框&lt;/caption&gt;
-        &lt;tr&gt;
-            &lt;th&gt;序列号&lt;/th&gt;
-            &lt;th&gt;姓名&lt;/th&gt;
-            &lt;th&gt;年龄&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;张三&lt;/td&gt;
-            &lt;td&gt;29&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;李四&lt;/td&gt;
-            &lt;td&gt;26&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;3&lt;/td&gt;
-            &lt;td&gt;王五&lt;/td&gt;
-            &lt;td&gt;22&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-    &lt;table class=&quot;table table-striped table-bordered table-hover&quot;&gt;&lt;!--.table-border实现边框--&gt;
-        &lt;caption &gt;自适应+条纹+边框+悬停&lt;/caption&gt;
-        &lt;tr&gt;
-            &lt;th&gt;序列号&lt;/th&gt;
-            &lt;th&gt;姓名&lt;/th&gt;
-            &lt;th&gt;年龄&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;张三&lt;/td&gt;
-            &lt;td&gt;29&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;李四&lt;/td&gt;
-            &lt;td&gt;26&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;3&lt;/td&gt;
-            &lt;td&gt;王五&lt;/td&gt;
-            &lt;td&gt;22&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-    &lt;table class=&quot;table table-striped table-bordered table-hover table-condensed&quot;&gt;&lt;!--.table-border实现边框--&gt;
-        &lt;caption &gt;自适应+条纹+边框+悬停+紧凑型&lt;/caption&gt;
-        &lt;tr&gt;
-            &lt;th&gt;序列号&lt;/th&gt;
-            &lt;th&gt;姓名&lt;/th&gt;
-            &lt;th&gt;年龄&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;张三&lt;/td&gt;
-            &lt;td&gt;29&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;李四&lt;/td&gt;
-            &lt;td&gt;26&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;3&lt;/td&gt;
-            &lt;td&gt;王五&lt;/td&gt;
-            &lt;td&gt;22&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-&lt;/div&gt;
-&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><p>请关注我：<br>微信公众号</p>
-<center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/053443178.jpg" alt="mark"></center>
-
-<p>微信：</p>
-<center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/063204206.png" alt="mark"></center>
-
-<p>个人博客：<a href="http:zhangzhongquan.com/" title="个人博客" target="_blank" rel="external">http:zhangzhongquan.com/</a><br>知乎：<a href="https://www.zhihu.com/people/zhang-zhong-quan-38/activities" title="知乎" target="_blank" rel="external">https://www.zhihu.com/people/zhang-zhong-quan-38/activities</a></p>
+</code></pre><p>```</p>
+<hr>
+<p>请关注我：</p>
+<p><center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/100017619.png" alt="mark"></center><br>个人博客：<a href="http:zhangzhongquan.com/" title="个人博客" target="_blank" rel="external">http:zhangzhongquan.com/</a><br>知乎：<a href="https://www.zhihu.com/people/zhang-zhong-quan-38/activities" title="知乎" target="_blank" rel="external">https://www.zhihu.com/people/zhang-zhong-quan-38/activities</a></p>
 </the>
       
     </div>
@@ -575,13 +370,13 @@
   
     
     <div class="copyright">
-        <p><span>Title:</span><a href="/2017/03/11/Bootstrap学习笔记（三）—排版_/">Bootstrap学习笔记(3)-排版基础</a></p>
+        <p><span>Title:</span><a href="/2017/03/15/Bootstrap学习笔记(七)-表单4/">Bootstrap学习笔记(7)-表单4</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">张忠全</a></p>
-        <p><span>Created:</span>2017-03-11, 00:00:00</p>
-        <p><span>Updated:</span>2017-03-17, 05:24:13</p>
+        <p><span>Created:</span>2017-03-15, 00:00:00</p>
+        <p><span>Updated:</span>2017-03-17, 05:23:17</p>
         <p>
-            <span>Full URL:</span><a class="post-url" href="/2017/03/11/Bootstrap学习笔记（三）—排版_/" title="Bootstrap学习笔记(3)-排版基础">zhangzhongquan.com/2017/03/11/Bootstrap学习笔记（三）—排版_/</a>
-            <span class="copy-path" data-clipboard-text="From zhangzhongquan.com/2017/03/11/Bootstrap学习笔记（三）—排版_/　　By 张忠全" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2017/03/15/Bootstrap学习笔记(七)-表单4/" title="Bootstrap学习笔记(7)-表单4">zhangzhongquan.com/2017/03/15/Bootstrap学习笔记(七)-表单4/</a>
+            <span class="copy-path" data-clipboard-text="From zhangzhongquan.com/2017/03/15/Bootstrap学习笔记(七)-表单4/　　By 张忠全" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -594,15 +389,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2017/03/12/Bootstrap学习笔记(四)-表单1/">
-                    Bootstrap学习笔记(4)-表单1
+                <a href="/2017/03/16/Bootstrap学习笔记(八)-表单5/">
+                    Bootstrap学习笔记(8)-表单5
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2017/03/10/Bootstrap学习笔记(二)/">
-                    Bootstrap学习笔记(2)-栅格原理2
+                <a href="/2017/03/14/Bootstrap学习笔记(六)-表单3/">
+                    Bootstrap学习笔记(6)-表单3
                 </a>
             </div>
         
@@ -614,7 +409,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#———————"><span class="toc-number">1.</span> <span class="toc-text">———————-</span></a></li></ol>
+            
         
     </div>
     <style>
@@ -650,7 +445,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Bootstrap学习笔记(3)-排版基础　| zhangzhongquan　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"Bootstrap学习笔记(7)-表单4　| zhangzhongquan　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -670,7 +465,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/03/12/Bootstrap学习笔记(四)-表单1/" title="Pre: Bootstrap学习笔记(4)-表单1">
+            <a href="/2017/03/16/Bootstrap学习笔记(八)-表单5/" title="Pre: Bootstrap学习笔记(8)-表单5">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -678,7 +473,7 @@
         <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/03/10/Bootstrap学习笔记(二)/" title="Next: Bootstrap学习笔记(2)-栅格原理2">
+            <a href="/2017/03/14/Bootstrap学习笔记(六)-表单3/" title="Next: Bootstrap学习笔记(6)-表单3">
                 <i class="fa fa-angle-right"></i>
             </a>
         
