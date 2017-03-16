@@ -267,6 +267,137 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-Bootstrap学习笔记(九)-按钮" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/03/17/Bootstrap学习笔记(九)-按钮/" class="article-date">
+      <time datetime="2017-03-16T16:00:00.000Z" itemprop="datePublished">2017-03-17</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/17/Bootstrap学习笔记(九)-按钮/">Bootstrap学习笔记(九)-按钮</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><excerpt in="" index="" |="" 首页摘要=""><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark">    </excerpt></p>
+<p>##bootstrap按钮</p>
+<!-- more余下全文-->
+<the rest="" of="" contents="" |="" 余下全文="">
+
+<ul>
+<li>###知识点.<br>1.bootstarp中定义了七种按钮样式：.btn-default(默认样式）; .btn-primary(首选项) ;.btn-success(成功）；.btn-info（一般信息）；.btn-warning(警告)；.btn-danger(危险）；.btn-link(链接）<br>2.按钮的大小定义了三种：.btn-lg、.btn-sm 、.btn-xs<br>3.通过给按钮添加 .btn-block 类可以将其拉伸至父元素100%的宽度，而且按钮也变为了块级（block）元素。<br>4.给a或div标签添加类. rote-button可其转化为按钮</li>
+</ul>
+<hr>
+<center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170317/045445788.png" alt="mark"><br></center><br><center><strong><em>图片</em></strong></center>
+
+<p>代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</div><div class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</div><div class="line">    &lt;title&gt;Dome01&lt;/title&gt;</div><div class="line">    &lt;link rel=&quot;stylesheet&quot; href=&quot;../node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;div class=&quot;container&quot;&gt;</div><div class="line">    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;（默认样式）Default&lt;/button&gt;</div><div class="line"></div><div class="line">    &lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</div><div class="line">    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;（首选项）Primary&lt;/button&gt;</div><div class="line"></div><div class="line">    &lt;!-- Indicates a successful or positive action --&gt;</div><div class="line">    &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;（成功）Success&lt;/button&gt;</div><div class="line"></div><div class="line">    &lt;!-- Contextual button for informational alert messages --&gt;</div><div class="line">    &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;（一般信息）Info&lt;/button&gt;</div><div class="line"></div><div class="line">    &lt;!-- Indicates caution should be taken with this action --&gt;</div><div class="line">    &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;（警告）Warning&lt;/button&gt;</div><div class="line"></div><div class="line">    &lt;!-- Indicates a dangerous or potentially negative action --&gt;</div><div class="line">    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;（危险）Danger&lt;/button&gt;</div><div class="line"></div><div class="line">    &lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;</div><div class="line">    &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;（链接）Link&lt;/button&gt;</div><div class="line">    &lt;hr&gt;</div><div class="line">    &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot;&gt;默认样式按钮大&lt;/button&gt;</div><div class="line">    &lt;br&gt;</div><div class="line">    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;默认样式按钮默&lt;/button&gt;</div><div class="line">    &lt;br&gt;</div><div class="line"></div><div class="line">    &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm&quot;&gt;默认样式按钮小&lt;/button&gt;</div><div class="line">    &lt;br&gt;</div><div class="line"></div><div class="line">    &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs&quot;&gt;默认样式按钮小&lt;/button&gt;</div><div class="line">    &lt;hr&gt;</div><div class="line">    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-warning-sign&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;你的电脑正在被黑客攻击，请拔掉你的电源！&lt;/button&gt;</div><div class="line">    &lt;hr&gt;</div><div class="line">    &lt;div class=&quot;btn btn-danger role-button&quot;&gt;在这里&lt;/div&gt;</div><div class="line">    &lt;a href=&quot;#&quot; class=&quot;btn btn-danger role-button&quot;&gt;在这里&lt;/a&gt;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line"></div><div class="line">&lt;script src=&quot;../node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script src=&quot;../node_modules/bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<hr>
+<p>请关注我：</p>
+<p><center><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/100017619.png" alt="mark"></center><br>个人博客：<a href="http:zhangzhongquan.com/" title="个人博客" target="_blank" rel="external">http:zhangzhongquan.com/</a><br>知乎：<a href="https://www.zhihu.com/people/zhang-zhong-quan-38/activities" title="知乎" target="_blank" rel="external">https://www.zhihu.com/people/zhang-zhong-quan-38/activities</a></p>
+</the>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Bootstrap学习笔记(六)-表单3" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/03/16/Bootstrap学习笔记(六)-表单3/" class="article-date">
+      <time datetime="2017-03-15T16:00:00.000Z" itemprop="datePublished">2017-03-16</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/16/Bootstrap学习笔记(六)-表单3/">Bootstrap学习笔记(六)-表单3.md</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><Excerpt in index | 首页摘要><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark">   </p>
+<p>##bootstrap表单-多选框和单选框<br>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+        <p class="article-more-link">
+          <a href="/2017/03/16/Bootstrap学习笔记(六)-表单3/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-Bootstrap学习笔记(七)-表单4" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -310,6 +441,67 @@
       
         <p class="article-more-link">
           <a href="/2017/03/16/Bootstrap学习笔记(七)-表单4/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Bootstrap学习笔记(八)-表单5" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/03/16/Bootstrap学习笔记(八)-表单5/" class="article-date">
+      <time datetime="2017-03-15T16:00:00.000Z" itemprop="datePublished">2017-03-16</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/16/Bootstrap学习笔记(八)-表单5/">Bootstrap学习笔记(八)-校检状态</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><Excerpt in index | 首页摘要><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark">    </p>
+<p>##bootstrap校检状态</p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+        <p class="article-more-link">
+          <a href="/2017/03/16/Bootstrap学习笔记(八)-表单5/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -373,128 +565,6 @@
       
         <p class="article-more-link">
           <a href="/2017/03/16/Bootstrap学习笔记(五)-表单2/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Bootstrap学习笔记(八)-表单9" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/03/16/Bootstrap学习笔记(八)-表单9/" class="article-date">
-      <time datetime="2017-03-15T16:00:00.000Z" itemprop="datePublished">2017-03-16</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/16/Bootstrap学习笔记(八)-表单9/">Bootstrap学习笔记(八)-校检状态</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><Excerpt in index | 首页摘要><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark">    </p>
-<p>##bootstrap校检状态</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-        <p class="article-more-link">
-          <a href="/2017/03/16/Bootstrap学习笔记(八)-表单9/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Bootstrap学习笔记(六)-表单3" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/03/16/Bootstrap学习笔记(六)-表单3/" class="article-date">
-      <time datetime="2017-03-15T16:00:00.000Z" itemprop="datePublished">2017-03-16</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/16/Bootstrap学习笔记(六)-表单3/">Bootstrap学习笔记(六)-表单3.md</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><Excerpt in index | 首页摘要><br><img src="http://ok8z4bh5q.bkt.clouddn.com/blog/20170311/091224433.jpg" alt="mark">   </p>
-<p>##bootstrap表单-多选框和单选框<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-        <p class="article-more-link">
-          <a href="/2017/03/16/Bootstrap学习笔记(六)-表单3/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -656,7 +726,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/11/Bootstrap学习笔记(二)/">Bootstrap学习笔记(二)</a>
+      <a class="article-title" href="/2017/03/11/Bootstrap学习笔记(二)/">Bootstrap学习笔记(二)-栅格原理2.md</a>
     </h1>
   
 
@@ -717,7 +787,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/06/bootstrap学习笔记(一)/">bootstrap学习笔记(一)</a>
+      <a class="article-title" href="/2017/03/06/bootstrap学习笔记(一)/">bootstrap学习笔记(一)-栅格原理1。md</a>
     </h1>
   
 
@@ -820,68 +890,10 @@
 
 
   
-    <article id="post-解忧杂货店" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2017/01/25/解忧杂货店/" class="article-date">
-      <time datetime="2017-01-24T16:00:00.000Z" itemprop="datePublished">2017-01-25</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/25/解忧杂货店/">在十字路口，我捡到一本书：《解忧杂货店》</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><Excerpt in index | 首页摘要> </p>
-<h3 id="选择塑造人生"><a href="#选择塑造人生" class="headerlink" title="选择塑造人生"></a>选择塑造人生</h3><p>我们的每一次艰难选择，犹如在人生十字路口，期盼在迷茫徘徊时有这样的一个杂货店，能指引前进的方向。也许那件杂货店一直都在，指引我们的永远不是别人，而是自己的内心。</p>
-<p>这本书中讲诉了一家杂货店，只要写下烦恼投进店前门卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。书中谢几段故事，也是几种人生的不同抉择。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-        <p class="article-more-link">
-          <a href="/2017/01/25/解忧杂货店/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 </div>
       <footer id="footer">
